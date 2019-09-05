@@ -1,16 +1,17 @@
 public class Carta {
-	Naipe naipe;
+	
+	String naipe;
 	Integer valor;
 	
-	public Carta(Naipe _naipe, Integer _valor) {
+	public Carta(String _naipe, Integer _valor) {
 		this.naipe = _naipe;
 		this.valor = _valor;
 	}
 	
-	public Naipe getNaipe() {
+	public String getNaipe() {
 		return naipe;
 	}
-	public void setNaipe(Naipe naipe) {
+	public void setNaipe(String naipe) {
 		this.naipe = naipe;
 	}
 	public Integer getValor() {
