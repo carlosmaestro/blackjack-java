@@ -27,4 +27,9 @@ public class Baralho {
 
 		return _listaCartas;
 	}
+
+	public void embaralhar(){
+		Carta[] tempCartas = this.cartas;
+
+	}
 }
