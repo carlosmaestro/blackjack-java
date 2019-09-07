@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9640f7b5-b30d-44a8-bd43-3e0755042de5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BlackJack/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BlackJack/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Baralho.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Baralho.java" afterDir="false" />
-    </list>
+    <list default="true" id="9640f7b5-b30d-44a8-bd43-3e0755042de5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +23,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -74,6 +70,7 @@
       <updated>1567789942860</updated>
       <workItem from="1567789947815" duration="100000" />
       <workItem from="1567790264019" duration="1993000" />
+      <workItem from="1567810219553" duration="3755000" />
     </task>
     <servers />
   </component>
@@ -85,7 +82,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

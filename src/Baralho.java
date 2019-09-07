@@ -1,3 +1,7 @@
+import java.sql.Array;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
 
 public class Baralho {
 	Carta[] cartas;
@@ -28,8 +32,24 @@ public class Baralho {
 		return _listaCartas;
 	}
 
-	public void embaralhar(){
-		Carta[] tempCartas = this.cartas;
+	public void embaralhar(int vezes){
+		Random r = new Random();
+		Carta cAux;
+		for(int j = 0; j < vezes; j++) {
+			for (int i = 0; i < cartas.length; i++) {
+				int c = r.nextInt(cartas.length);
+				cAux = cartas[c];
+				cartas[c] = cartas[i];
+				cartas[i] = cAux;
+			}
+		}
+	}
 
+	public String toString(){
+		StringBuilder repr = new StringBuilder();
+		for (Carta c: cartas) {
+			repr.append(c.simbolo + " - " + c.naipe + ",");
+		}
+		return repr.toString();
 	}
 }
