@@ -1,18 +1,34 @@
+import java.util.Scanner;
 
 public class Main {
+    public static void main(String[] args) {
+        int numJogarores;
+        Scanner scanner = new Scanner(System.in);
 
-	public static void main(String[] args) {
+        numJogarores = perguntaNumeroJogadores(scanner);
+        Jogo jogo = new Jogo(numJogarores);
+    }
 
-		Baralho baralho = new Baralho();
+    public static int perguntaNumeroJogadores(Scanner scanner) {
+        int num = 1;
+        boolean continuePerguntando = true;
+        while (continuePerguntando) {
+            System.out.println("Informe o número de jogadores(1 a 6):");
+            try {
+                num = scanner.nextInt();
+                scanner.nextLine();
+                if (num >= 1 && num <= 6) {
+                    continuePerguntando = false;
+                } else {
+                    System.out.println("Informe um valor entre 1 e 6.");
+                }
+            } catch (Exception e) {
+                System.out.println("Valor informado inesperado.");
+                scanner.nextLine();
+            }
+        }
 
-//		for (Carta carta : baralho.cartas) {
-//			System.out.println(carta.naipe + " - " + carta.simbolo + " - " + carta.valor);
-//		}
-		System.out.println(baralho);
-		baralho.embaralhar(5);
-		System.out.println(baralho);
-
-
-	}
+        return num;
+    }
 
 }

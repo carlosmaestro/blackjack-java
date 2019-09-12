@@ -20,13 +20,13 @@ public class Baralho {
 		
 		int countCartas = 0;
 		for (String naipe : listaNaipes) {
-			System.out.println(naipe);
+//			System.out.println(naipe);
 			for (CartaValor carta : listaCartas) {
 				_listaCartas[countCartas] = new Carta(naipe, carta.simbolo, carta.valor);
-				System.out.println(carta.simbolo);
+//				System.out.println(carta.simbolo);
 				countCartas++;
 			}
-			System.out.println(countCartas);
+			// System.out.println(countCartas);
 		}
 
 		return _listaCartas;
